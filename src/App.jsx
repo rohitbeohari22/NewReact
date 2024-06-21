@@ -1,90 +1,15 @@
-import Cybrom from "./Cybrom";
-const student={
-    "rolln":1212,
-     "name":"raj",
-     "city":"bhopal,"
-}
+// import Employee from "../Employee"
 
-const App=()=>{
-    return(
-        <>
-        <h1> welcome to cybrom </h1>
-        <Cybrom rolln={student.rolln} name={student.name} city={student.city} />
-        </>
-    )
-}
 
-export default App;
-
-// const App=()=>{
-//     const name=["ram","shayam","raj","rohit"];
-//     const ans=name.map((key)=>{
-//         return(
-//             <>
-//             <h1>{key}</h1>
-//             </>
-//         )
-//     })
-
+// const myemp=Employee.map((key)=>{
 //     return(
 //         <>
-//         <h1>welcome to cybrom Bhopal</h1>
-//         {ans}
-//         </>
-//     )
-// }
-
-// export default App;
-
-
-
-// const age=[24,36,35,55,66]
-// const myage = age.map((key)=>{
-
-//     return(
-//         <>
-//         <h1>{key*2}</h1>
-        
-//         </>
-//     )
-
-// })
-
-// const App=()=>{
-//     return(
-//         <>
-//         <h1> welcome to cybrom</h1>
-//         {myage}
-//         </>
-//     )
-// }
-
-// export default App;
-
-
-
-// const city=["bhopal","indor","rewa","ujjain"]
-// const mycity=city.map((key)=>{
-//     return(
-//         <option>{key}</option>
-//     )
-// })
-
-// const App=()=>{
-//     return(
-//         <>
-//         <h1>weolcomt to cybrom </h1>
-//         <select>{mycity}</select>
-//         </>
-//     )
-// }
-// export default App;
-
-// const Subject=["php","oracle","java","asp"];
-// const mysub=Subject.map((key)=>{
-//     return(
-//         <>
-//         <li>{key}</li>
+//         <tr>
+//             <td>{key.empn}</td>
+//             <td>{key.name}</td>
+//             <td>{key.salary}</td>
+//             <td>{key.city}</td>   
+//         </tr>
 //         </>
 //     )
 // })
@@ -92,15 +17,24 @@ export default App;
 // const App=()=>{
 //     return(
 //         <>
-//         <h1>Welcome to cybrom</h1>
-//         <ul>{mysub}</ul>
+//         <h1>welcome to cybrom</h1>
+//         <table border="1px" bgcolor="yellow" width="600px" align="center">
+//             <tr bgcolor="orange">
+//                 <th>empn:</th>
+//                 <th>name:</th>
+//                 <th>salary:</th>
+//                 <th>city:</th>
+                
+//             </tr>
+//             {myemp}
+//         </table>
 //         </>
+
 //     )
 // }
+
 // export default App;
 
 
 
-
-
-
+  
