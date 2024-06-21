@@ -1,40 +1,27 @@
-// import Employee from "../Employee"
+import Collage from "../Collage";
+import Student from "./Student";
+     
 
+const mystd=Student.map((key)=><Collage rnm={key.rolln} nm={key.name}
+ fs={key.fees} city={key.city} />);
 
-// const myemp=Employee.map((key)=>{
-//     return(
-//         <>
-//         <tr>
-//             <td>{key.empn}</td>
-//             <td>{key.name}</td>
-//             <td>{key.salary}</td>
-//             <td>{key.city}</td>   
-//         </tr>
-//         </>
-//     )
-// })
+const App=()=>{
+return(
+    <>
+    <h1>cybrom</h1>
 
-// const App=()=>{
-//     return(
-//         <>
-//         <h1>welcome to cybrom</h1>
-//         <table border="1px" bgcolor="yellow" width="600px" align="center">
-//             <tr bgcolor="orange">
-//                 <th>empn:</th>
-//                 <th>name:</th>
-//                 <th>salary:</th>
-//                 <th>city:</th>
-                
-//             </tr>
-//             {myemp}
-//         </table>
-//         </>
-
-//     )
-// }
-
-// export default App;
-
-
-
-  
+    <table border="1">
+    <tr>
+    <th>rolln:</th>
+    <th>name:</th>
+    <th>fees:</th>
+    <th>city:</th>
+    </tr>
+    {mystd}
+    </table>
+    </>
+    
+    
+)
+}
+export default App;
