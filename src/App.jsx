@@ -1,25 +1,30 @@
-import Student from "./Student";
-import Cybrom from "./Cybrom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import Contact from "./pages/Contact";
+import Nopage from "./pages/Nopage";
+
+const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Nopage />} />
+          </Route>
 
 
-const mystd=Student.map((key)=><Cybrom rnm={key.rolln} nm={key.name} ct={key.city} fs={key.fees}/>)
-
-const App=()=>{
-    return(
-        <>
-         <h1>this is cybrom Student</h1>
-        <table align="center" border="1" width="600">
-       
-        <tr>
-            
-            <th>Rolln:</th>
-            <th> Name: </th>
-            <th>City:</th>
-            <th>Fees:</th>
-        </tr>
-        {mystd}
-        </table>
-        </>
-    )
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 export default App;
